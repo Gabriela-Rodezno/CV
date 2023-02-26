@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    text-align: flex-start;
+    min-height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.asideLeft{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 60px;
+    margin-bottom: auto;
+    background-color: rgb(105, 101, 119);
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 40rem;
+}
+
+.image-profile{
+    border-radius: 50%;
+
+}
+
+hr{
+    background-color: antiquewhite;
+}
+
+section{
+    background-color: white;
+    float: right;
+}
+
+.sectionRight{
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-top: 30px;
+    float: left;
+    margin-bottom: 0px;
+    display: grid
+}
+
+.name{
+    float: right;
+    display: flex;
+}
+
+.fondoTitulos{
+    padding: 12px 15px;
+    max-width: 600;
+
+    font-size: 1em;
+    letter-spacing: normal;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.estilo{
+    display: grid;
+}
+
+@media (min-width: 600px){
+    .estilo{
+        grid-template-columns: 350px 65%;
+        grid-template-rows: 100px 50%;
+    }
+
+    .asideLeft{
+        max-width: 20rem;
+    }
+}
+
+body div aside .asideLeft .image-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .asideLeft ul li{
+    list-style: none;
+}
+
+aside .sectionRight h3 .fondoTitulos ol li{
+    list-style: none;
+}
